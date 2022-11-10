@@ -67,11 +67,12 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           
-      - name: debug
-        run: |
-          echo tags: ${{ steps.meta.outputs.tags }}
-          echo labels: ${{ steps.meta.outputs.labels }}
-          echo sha: ${{ github.sha }}
+
+#      - name: debug
+#      run: |
+ #         echo "tags: ${{ steps.meta.outputs.tags }}"
+     #     echo "labels: ${{ steps.meta.outputs.labels }}"
+     #     echo "sha: ${{ github.sha }}"
 
   Deploy-to-Azure:
     runs-on: ubuntu-latest
